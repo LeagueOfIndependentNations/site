@@ -1,0 +1,38 @@
+{% extends "default" %}
+
+{% block head_meta %}
+{% endblock %}
+
+{% block content_wrapper %}
+
+<div class="ph3 bg-off-white">
+  <div class="center mw6 pv3">
+
+    <img src="assets/img/logo.svg" alt="" class="db w4 center pv4">
+
+    <p>{{ post.intro.text }}</p>
+
+    <h3 class="f4 b lh-title mb2">{{ page.main.heading }}</h3>
+    <p>{{ page.main.text }}</p>
+
+    <div class="flex-ns mb3">
+
+      <div>
+        <h4 class="f4 b lh-title mb2 primary">{{ page.main.location.subheading }}</h4>
+        <p>{{ page.main.location.address }}</p>
+      </div>
+
+      <div>
+        <h4 class="f4 b lh-title mb2 primary">{{ page.main.opening_hours.subheading }}</h4>
+        <p>{{ page.main.opening_hours.info }}</p>
+      </div>
+
+    </div>
+
+    {% include 'contact_form' %}
+
+  </div>
+</div>
+
+{% endblock %}
+

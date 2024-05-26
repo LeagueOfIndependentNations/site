@@ -1,0 +1,64 @@
+{% extends "default" %}
+
+{% block head_meta %}
+{% endblock %}
+
+{% block content_wrapper %}
+
+{% set jumbotronVars = { 'image_jumboUrl':  '/assets/img/about/jumbotron.jpg' , 'title': 'Values' } %}
+{% include 'jumbotron.twig' with jumbotronVars %}
+
+<div class="mw7 center ph3 pt4">
+
+  <div class="flex-m mhn3-m mb4">
+    <div class="ph3-m w-50-m">
+      <img src="{{ site.url }}{{ page.main.image1 }}" alt="" class="db mb2">
+    </div>
+    <div class="ph3-m w-50-m">
+      <h3 class="f3 b lh-title mb1">{{ page.main.heading1 }}</h3>
+      <p>{{ page.main.text1 }}</p>
+    </div>
+  </div>
+
+  <div class="flex-m mhn3-m mb4">
+    <div class="ph3-m w-50-m order-last-m">
+      <img src="{{ page.main.image2 }}" alt="" class="db mb2">
+    </div>
+    <div class="ph3-m w-50-m">
+      <h3 class="f3 b lh-title mb1">{{ page.main.heading2 }}</h3>
+      <p>{{ page.main.text2 }}</p>
+    </div>
+  </div>
+
+  <div class="flex-m mhn3-m mb4">
+    <div class="ph3-m w-50-m">
+      <img src="{{ site.url }}{{ page.main.image3 }}" alt="" class="db mb2">
+    </div>
+    <div class="ph3-m w-50-m">
+      <h3 class="f3 b lh-title mb1">{{ page.main.heading3 }}</h3>
+      <p>{{ page.main.text3 }}</p>
+    </div>
+  </div>
+
+  <div class="flex-m mhn3-m mb4">
+    <div class="ph3-m w-50-m order-last-m">
+      <img src="{{ page.main.image4 }}" alt="" class="db mb2">
+    </div>
+    <div class="ph3-m w-50-m">
+      <h3 class="f3 b lh-title mb1">{{ page.main.heading4 }}</h3>
+      <p>{{ page.main.text4 }}</p>
+    </div>
+  </div>
+
+  <div class="flex-m mhn3-m mb4">
+    <div class="ph3-m w-50-m">
+      <img src="{{ site.url }}{{ page.main.image5 }}" alt="" class="db mb2">
+    </div>
+    <div class="ph3-m w-50-m">
+      <h3 class="f3 b lh-title mb1">{{ page.main.heading5 }}</h3>
+      <p>{{ page.main.text5 }}</p>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

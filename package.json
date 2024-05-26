@@ -1,0 +1,46 @@
+{
+  "name": "kaldi-sculpin-netlify-template",
+  "version": "1.0.0",
+  "description": "Sculpin based small business template with CMS integration for Netlify",
+  "main": "gruntfile.js",
+  "scripts": {
+    "prod": "sculpin generate --env=prod",
+    "dev": "vendor/bin/sculpin generate --watch --server",
+    "build": "vendor/sculpin/sculpin/bin/sculpin generate --env=prod",
+    "update:packages": "node ../../js/snippets/npm-wipe-package-dependencies.js && rm -rf node_modules && npm update --save-dev && npm update --save"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeagueOfIndependentNations/site.git"
+  },
+  "keywords": [
+    "Sculpin",
+    "Netlify",
+    "template",
+    "boilerplate"
+  ],
+  "author": "Bram de Haan (http://atelierbramdehaan.nl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atelierbram/kaldi-sculpin-netlify-template/issues"
+  },
+  "homepage": "https://github.com/atelierbram/kaldi-sculpin-netlify-template#readme",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "cssnano": "*",
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-exec": "*",
+    "grunt-postcss": "*",
+    "grunt-sass": "*",
+    "grunt-svgstore": "*",
+    "matchdep": "*",
+    "node-sass": "*",
+    "pretty": "*",
+    "time-grunt": "*"
+  }
+}
